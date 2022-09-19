@@ -1,11 +1,11 @@
 import React from 'react';
 
-const Buttons = () => {
+const Tasks = () => {
     return (
         <div>
-            Load issues
+            <h1>Tasks</h1>
         </div>
     );
 };
 
-export default Buttons;
+export default Tasks;

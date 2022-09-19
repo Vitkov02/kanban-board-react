@@ -1,0 +1,33 @@
+.input{
+    
+    width: 100%;
+    font-size: 100%;
+    background-color: $white;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2),
+                0 25px 50px 0 rgba(0, 0, 0, 0.1);
+
+
+    &__form{
+        margin-left: 1px;
+        margin-bottom: 1px;
+        border: 1px solid transparent;
+        border-radius: 3px;
+        border-color: rgba(175, 47, 47, 0.2);   
+    }
+
+    &__btn{
+        float: right;
+        margin-top: 1px;
+        margin-right: 1px;
+        background-color: $white;
+        border: 1px solid transparent;
+        border-radius: 3px;
+        border-color: rgba(175, 47, 47, 0.2);
+        cursor: pointer; 
+    }
+
+    :focus {
+        outline: none;
+    }
+}
+
