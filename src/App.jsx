@@ -1,14 +1,16 @@
 import Input from "./components/Input";
+import Tasks from "./components/Tasks";
 
 import './style/index.scss';
 
 function App() {
   return (
-    <div className="main">
+    <main className="main">
       <div className="container">
         <Input/>
+        <Tasks/>
       </div>
-    </div>
+    </main>
 )}
 
 export default App;
