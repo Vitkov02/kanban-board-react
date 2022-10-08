@@ -13,23 +13,16 @@ const Tasks = () => {
 
     function dragOverHandler(e) {
         e.preventDefault()
-        if(e.target.className == 'item') {
-            e.target.style.boxShadow = '0 4px 3px gray'
-        }
     }
 
-    function dragLeaveHandler(e) {
-        e.target.style.boxShandow = 'none'
-    }
+    function dragLeaveHandler(e) {}
 
     function dragStartHandler(e, board, item){
         setCurrentBoard(board)
         setcurrentItem(item)
     }
 
-    function dragEndHandler(e) {
-        e.target.style.boxShadow = 'none'
-    }
+    function dragEndHandler(e) {}
 
     function dropHandler(e, board, item) {
         e.preventDefault()
@@ -46,7 +39,6 @@ const Tasks = () => {
             }
             return b
         }))
-        e.target.style.boxShadow = 'none'
     }
 
     function dropCardHandler(e, board) {
@@ -65,11 +57,10 @@ const Tasks = () => {
                     return b
                 }))
       }
-        e.target.style.boxShadow = 'none'
     }
 
     return (
-        <div className='app'>
+        <div className='kanban'>
             {boards.map(board =>
                 <div 
                 className="board"

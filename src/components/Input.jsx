@@ -9,6 +9,7 @@ const Input = () => {
     }
 
     return (
+        <>
         <div className='input'>
             <input className='input__form'
                 type="text"
@@ -18,6 +19,8 @@ const Input = () => {
             />
             <button className='input__btn' onClick={loadIssues}>Load issues</button>
         </div>
+        <hr />
+        </>
     );
 };
 

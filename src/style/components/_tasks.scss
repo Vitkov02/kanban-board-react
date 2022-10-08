@@ -1,26 +1,33 @@
-.board {
-    min-width: 300px;
-    min-height: 400px;
-    border: 5px solid lightgrey;
-    padding: 20px 10px;
-    border-radius: 12px;
-    margin: 10px;
-    display: inline-block;
-    align-items: center;
-    flex-direction: column;
+.kanban {
+    
+    background-color: $white;
+    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2),
+                0 25px 50px 0 rgba(0, 0, 0, 0.1);
 
-    &__title{
-        font-size: 1.5rem;
-        font-weight: 700;
+    .board {
+        min-width: 300px;
+        min-height: 400px;
+        border: 5px solid lightgrey;
+        padding: 20px 10px;
+        border-radius: 12px;
+        margin: 10px;
+        display: inline-block;
+        align-items: center;
+        flex-direction: column;
+    
+        &__title{
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
     }
-}
-
-.item {
-    width: 100%;
-    border: 2px solid lightpink;
-    padding: 10px;
-    border-radius: 6px;
-    margin: 5px 0;
-    border-color: #fcfcf9;
-    cursor: grab;
+    
+    .item {
+        width: 100%;
+        border: 2px solid lightpink;
+        padding: 10px;
+        border-radius: 6px;
+        margin: 5px 0;
+        border-color: #fcfcf9;
+        cursor: grab;
+    }
 }
